@@ -1,0 +1,12 @@
+<!-- Filename: public/view_story.html -->
+
+<div ng-hide="totalPageCount">
+  Loading story...
+</div>
+
+<div id="viewer" style="width:800px; height:600px"></div>
+
+<div ng-show="totalPageCount">
+  <input type="button" ng-click="previousPage()" ng-disabled="currentPage == 1" value="Previous Page" /> Page {{currentPage}} of {{totalPageCount}}
+  <input type="button" ng-click="nextPage()" ng-disabled="currentPage == totalPageCount" value="Next Page" />
+</div>

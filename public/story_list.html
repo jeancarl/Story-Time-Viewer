@@ -1,0 +1,10 @@
+<!-- Filename: public/story_list.html -->
+<h2>Available Stories</h2>
+
+<div ng-hide="stories.length">No stories have been added!</div>
+
+<ul>
+  <li ng-repeat="story in stories"><a href="#/read/{{story.documentId}}">{{story.title}}</a></li>
+</ul>
+
+<a href="#/add">Add a story</a>

@@ -1,0 +1,13 @@
+{
+  "name": "story-time",
+  "description": "Story Time application for Node.js",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "express": "*",
+    "body-parser": "*",
+    "request": "*",
+    "cors": "*",
+    "mongoose": "*"
+  }
+}
